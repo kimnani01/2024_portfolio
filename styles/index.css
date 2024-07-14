@@ -1,0 +1,186 @@
+/* body, html {scroll-behavior: smooth;} */
+/* header */
+header {
+    position: fixed; left: 0; top: 0; z-index: 998;
+    width: 100%;
+    display: flex; 
+    justify-content: space-between; align-items: center;
+    padding: 25px 100px;
+    background-color: #05274F;
+    /* display: none; */
+}
+header * {color: #FFD662; font-family: school_b, serif;}
+header h1 {}
+header h1 a {font-size: 1.875rem;}
+header h1 a span {font-size: 1.25rem; margin-top: 5px;}
+header nav {}
+header nav a {margin-right: 50px;}
+header nav a:last-child {margin: 0;}
+/* fullpage */
+#wrap {}
+#wrap > * {background: #05274F;}
+/* h1 공통 */
+.title {
+    font-size: 3.125rem; font-family: 'school_b', serif;
+    color: #FFD662; text-align: center;
+    margin-bottom: 80px;
+}
+/* 1. 표지 */
+.intro {
+    background: url(../images/bg.jpg) center !important;
+    position: relative; left: 0; top: 0; z-index: 999;
+}
+.intro .main_title {
+    color: #FFD662; text-align: center;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+.intro .main_title * {font-family: school_b, serif;}
+.intro .main_title .year {font-size: 1.875rem;}
+.intro .main_title h1 {font-size: 6.25rem; margin: 5px 0;}
+.intro .main_title .name {font-size: 3.125rem;}
+/* 2. 프로필 */
+.profile_wrap {}
+.profile {
+    display: flex; flex-flow: row nowrap;
+    align-items: center; justify-content: center;
+    gap: 120px;
+}
+.profile * {color: #fff;}
+.profile .photo {}
+.profile .photo p {}
+.profile .photo p img {}
+.profile .photo .info {
+    font-size: 1.25rem; text-align: center;
+    margin-top: 30px; line-height: 1.3;
+}
+.profile .photo .info span {color: #FFD662;}
+.profile .txt {
+    display: grid;
+    grid-template-areas: 
+        'about_me skill'
+        'awards experience';
+    gap: 150px 120px;
+}
+/* 프로필 h2 공통 */
+.profile .txt h2 {
+    color: #FFD662; margin-bottom: 30px;
+    font-family: 'school_b', serif; font-size: 1.875rem;
+}
+.profile .txt .about_me {grid-area: about_me;}
+.profile .txt .about_me h2 {}
+.profile .txt .about_me p {margin-bottom: 20px;}
+.profile .txt .about_me p:last-child {margin: 0;}
+.profile .txt .skill {grid-area: skill;}
+.profile .txt .skill h2 {}
+.profile .txt .skill .icon {
+    width: 400px;
+    display: flex; flex-flow: row wrap;
+    gap: 30px 20px;
+}
+.profile .txt .skill .icon li {}
+.profile .txt .skill .icon li img {}
+.profile .txt .awards_license {grid-area: awards;}
+.profile .txt .awards_license h2 {}
+.profile .txt .awards_license .info {width: 399px;}
+.profile .txt .awards_license .info dt,
+.profile .txt .experience .info dt {
+    padding-right: 25px;
+    float: left;
+}
+.profile .txt .awards_license .info dt {}
+.profile .txt .awards_license .info dd, 
+.profile .txt .experience .info dd {margin-bottom: 20px;}
+.profile .txt .awards_license .info dd {}
+.profile .txt .awards_license .info dd:last-child,
+.profile .txt .experience .info dd:last-child {margin: 0;}
+.profile .txt .awards_license .info dd:nth-of-type(3){margin-left: 63px;}
+.profile .txt .experience {grid-area: experience;}
+.profile .txt .experience h2 {}
+.profile .txt .experience .info {width: 666px;}
+.profile .txt .experience .info dt {}
+.profile .txt .experience .info dd {}
+/* 3. web design */
+.web_wrap {}
+.web_wrap .web {position: relative; left: 0; top: 0; z-index: 800;}
+.web_wrap .web h1 {}
+.web_wrap .web .swiper {max-width: 1330px;}
+.web_wrap .web .swiper .swiper-wrapper {}
+.web_wrap .web .swiper .swiper-wrapper .swiper-slide {
+    background-color: #fff; border-radius: 15px;
+    display: flex; 
+    justify-content: center; align-items: center;
+    gap: 80px; padding: 50px 100px;
+}
+.web_wrap .web .swiper .swiper-wrapper .swiper-slide .thum {}
+.web_wrap .web .swiper .swiper-wrapper .swiper-slide .thum img {width: 100%;}
+.web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info {}
+.web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info h2 {
+    font-size: 3.125rem; font-weight: 700;
+}
+.web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info p {
+    font-weight: 500; margin: 15px 0 25px;
+}
+.web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info dl {}
+.web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info dl dd {
+    margin-bottom: 15px;
+}
+.web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info dl dt {
+    font-weight: 600; margin-bottom: 5px;
+}
+.web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info .link {
+    margin-top: 25px;
+    display: flex;
+}
+.web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info .link a {
+    background-color: #05274F; color: #FFD662; font-weight: 500;
+    display: inline-block; border-radius: 5px;
+    line-height: 46px; width: 150px; text-align: center;
+    margin-right: 10px;
+}
+.web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info .link a:last-child {margin:0}
+.web_wrap .web div[class^=swiper-button] {
+    color: #FFD662;
+    position: absolute; top: 60%;
+}
+.web_wrap .web .swiper-button-prev {left: 150px;}
+.web_wrap .web .swiper-button-next {right: 150px;}
+/* 4. App design */
+.app_wrap {}
+.app_wrap .app {position: relative; left: 0; top: 0; z-index: 800;}
+.app_wrap .app h1 {}
+.app_wrap .app .swiper {max-width: 1330px;}
+.app_wrap .app .swiper .swiper-wrapper {}
+.app_wrap .app .swiper .swiper-wrapper .swiper-slide {
+    background-color: #fff; border-radius: 15px;
+    display: flex; 
+    justify-content: center; align-items: center;
+    gap: 80px; padding: 50px 100px;
+}
+.app_wrap .app .swiper .swiper-wrapper .swiper-slide .thum {}
+.app_wrap .app .swiper .swiper-wrapper .swiper-slide .thum img {width: 100%;}
+.app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info {}
+.app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info h2 {
+    font-size: 3.125rem; font-weight: 700;
+}
+.app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info p {
+    font-weight: 500; margin: 15px 0 25px;
+}
+.app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info dl {}
+.app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info dl dd {
+    margin-bottom: 15px;
+}
+.app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info dl dt {
+    font-weight: 600; margin-bottom: 5px;
+}
+.app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info .link {
+    margin-top: 25px;
+    display: flex;
+}
+.app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info .link a {
+    background-color: #05274F; color: #FFD662; font-weight: 500;
+    display: inline-block; border-radius: 5px;
+    line-height: 46px; width: 150px; text-align: center;
+    margin-right: 10px;
+}
+.app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info .link a:last-child {margin:0}

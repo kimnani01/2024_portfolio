@@ -40,6 +40,8 @@ header nav a:last-child {margin: 0;}
 .intro .main_title .year {font-size: 1.875rem;}
 .intro .main_title h1 {font-size: 6.25rem; margin: 5px 0;}
 .intro .main_title .name {font-size: 3.125rem;}
+.intro .main_title .name span {}
+/* scroll */
 .intro .scroll {
     text-align: center; width: 100%;
     position: absolute; bottom: 50px;
@@ -60,7 +62,7 @@ header nav a:last-child {margin: 0;}
 .profile * {color: #fff;}
 .profile .photo {}
 .profile .photo p {}
-.profile .photo p img {}
+.profile .photo p img {width: 100%;}
 .profile .photo .info {
     font-size: 1.25rem; text-align: center;
     margin-top: 30px; line-height: 1.3;

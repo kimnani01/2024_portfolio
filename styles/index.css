@@ -14,7 +14,8 @@ header h1 {}
 header h1 a {font-size: 1.875rem;}
 header h1 a span {font-size: 1.25rem; margin-top: 5px;}
 header nav {}
-header nav a {margin-right: 50px;}
+header nav a {margin-right: 30px; padding: 5px;}
+header nav a:hover {border-bottom: 1px solid #FFD662;}
 header nav a:last-child {margin: 0;}
 /* fullpage */
 #wrap {}
@@ -103,7 +104,7 @@ header nav a:last-child {margin: 0;}
 /* 3. web design */
 .web_wrap {}
 .web_wrap .web {position: relative; left: 0; top: 0; z-index: 800;}
-.web_wrap .web h1 {}
+.web_wrap .web .title {}
 .web_wrap .web .swiper {max-width: 1330px;}
 .web_wrap .web .swiper .swiper-wrapper {}
 .web_wrap .web .swiper .swiper-wrapper .swiper-slide {
@@ -112,7 +113,7 @@ header nav a:last-child {margin: 0;}
     justify-content: center; align-items: center;
     gap: 80px; padding: 50px 100px;
 }
-.web_wrap .web .swiper .swiper-wrapper .swiper-slide .thum {}
+.web_wrap .web .swiper .swiper-wrapper .swiper-slide .thum {width: 577px;}
 .web_wrap .web .swiper .swiper-wrapper .swiper-slide .thum img {width: 100%;}
 .web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info {}
 .web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info h2 {
@@ -148,7 +149,7 @@ header nav a:last-child {margin: 0;}
 /* 4. App design */
 .app_wrap {}
 .app_wrap .app {position: relative; left: 0; top: 0; z-index: 800;}
-.app_wrap .app h1 {}
+.app_wrap .app .title {}
 .app_wrap .app .swiper {max-width: 1330px;}
 .app_wrap .app .swiper .swiper-wrapper {}
 .app_wrap .app .swiper .swiper-wrapper .swiper-slide {
@@ -184,3 +185,48 @@ header nav a:last-child {margin: 0;}
     margin-right: 10px;
 }
 .app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info .link a:last-child {margin:0}
+/* 5. sns */
+.sns_wrap {}
+.sns_wrap .sns {max-width: 1920px;}
+.sns_wrap .sns .title {}
+.sns_wrap .sns .swiper {}
+.sns_wrap .sns .swiper .swiper-wrapper {transition-timing-function: linear;}
+.sns_wrap .sns .swiper .swiper-wrapper .swiper-slide {align-self: center;}
+.sns_wrap .sns .swiper .swiper-wrapper .swiper-slide img {width: 100%;}
+/* 6.illust */
+.illust_wrap {}
+.illust_wrap .illust {max-width: 1920px;}
+.illust_wrap .illust .title {}
+.illust_wrap .illust .swiper {}
+.illust_wrap .illust .swiper .swiper-wrapper {transition-timing-function: linear;}
+.illust_wrap .illust .swiper .swiper-wrapper .swiper-slide {align-self: center;}
+.illust_wrap .illust .swiper .swiper-wrapper .swiper-slide img {width: 100%;}
+/* 7.video */
+.video_wrap {}
+.video_wrap .video {
+    text-align: center; width: max-content;
+    margin: 0 auto;
+}
+.video_wrap .video .title {}
+.video_wrap .video > a {
+    background: #FFD662; color: #05274F;
+    display: inline-block; border-radius: 5px;
+    height: 46px; width: 150px;
+    margin-bottom: 80px;
+}
+.video_wrap .video > a img {margin: 10.5px 10px 10.5px 15px;}
+.video_wrap .video > a span {
+    font-weight: 500; margin: 10px 15px 10px 0;
+    display: inline-block; line-height: 46px;
+}
+.video_wrap .video .thum {
+    display: flex; flex-flow: row wrap;
+    gap: 50px; 
+    max-width: 1430px;
+}
+.video_wrap .video .thum a {width: 320px; overflow: hidden;}
+.video_wrap .video .thum a img {width: 100%;}
+.video_wrap .video .thum a:hover img {transform: scale(1.1);}
+/* 8. outro */
+.outro {}
+.outro .title:first-child {margin-bottom: 30px;}

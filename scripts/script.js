@@ -2,7 +2,7 @@
 $('#wrap').fullpage({
     scrollBar:true,
     scrollingSpeed:400,
-    // responsiveWidth:1650,
+    responsiveWidth:1650,
     showActiveTooltip:true,
     menu:'nav',
     anchors:['intro', 'profile', 'web', 'app', 'sns', 'illust', 'video', 'outro']

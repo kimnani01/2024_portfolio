@@ -40,6 +40,16 @@ header nav a:last-child {margin: 0;}
 .intro .main_title .year {font-size: 1.875rem;}
 .intro .main_title h1 {font-size: 6.25rem; margin: 5px 0;}
 .intro .main_title .name {font-size: 3.125rem;}
+.intro .scroll {
+    text-align: center; width: 100%;
+    position: absolute; bottom: 50px;
+    animation: move 0.7s linear alternate infinite;
+}
+.intro .scroll img {}
+@keyframes move {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(30px);}
+}
 /* 2. 프로필 */
 .profile_wrap {}
 .profile {
@@ -210,9 +220,10 @@ header nav a:last-child {margin: 0;}
 .video_wrap .video .title {}
 .video_wrap .video > a {
     background: #FFD662; color: #05274F;
-    display: inline-block; border-radius: 5px;
+    border-radius: 5px;
     height: 46px; width: 150px;
-    margin-bottom: 80px;
+    margin: 0 auto 80px;
+    display: flex; align-items: center; justify-content: center;
 }
 .video_wrap .video > a img {margin: 10.5px 10px 10.5px 15px;}
 .video_wrap .video > a span {
@@ -225,7 +236,7 @@ header nav a:last-child {margin: 0;}
     max-width: 1430px;
 }
 .video_wrap .video .thum a {width: 320px; overflow: hidden;}
-.video_wrap .video .thum a img {width: 100%;}
+.video_wrap .video .thum a img {width: 100%; transition: transform 0.5s;}
 .video_wrap .video .thum a:hover img {transform: scale(1.1);}
 /* 8. outro */
 .outro {}

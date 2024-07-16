@@ -1,5 +1,5 @@
-/* body, html {scroll-behavior: smooth;} */
 /* header */
+body {min-width: 1650px;}
 header {
     position: fixed; left: 0; top: 0; z-index: 998;
     width: 100%;

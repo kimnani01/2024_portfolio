@@ -4,6 +4,10 @@
     font-family: school_b;
     src: url(../fonts/HakgyoansimBareonbatangB.ttf);
 }
+@font-face {
+    font-family: school_r;
+    src: url(../fonts/HakgyoansimBareonbatangR.ttf);
+}
 * {box-sizing: border-box;}
 body,html,
 h1,h2,h3,h4,h5,h6,fieldset,input,button,select,textarea,

@@ -162,7 +162,7 @@ header nav a:last-child {margin: 0;}
 .app_wrap {}
 .app_wrap .app {position: relative; left: 0; top: 0; z-index: 800;}
 .app_wrap .app .title {}
-.app_wrap .app .swiper {max-width: 1330px;}
+.app_wrap .app .swiper {max-width: 1050px;}
 .app_wrap .app .swiper .swiper-wrapper {}
 .app_wrap .app .swiper .swiper-wrapper .swiper-slide {
     background-color: #fff; border-radius: 15px;
@@ -181,7 +181,10 @@ header nav a:last-child {margin: 0;}
 }
 .app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info dl {}
 .app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info dl dd {
-    margin-bottom: 15px;
+    margin-bottom: 15px; width: 470px;
+}
+.app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info dl dd:nth-of-type(5){
+    line-height: 1.5;
 }
 .app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info dl dt {
     font-weight: 600; margin-bottom: 5px;
@@ -199,7 +202,7 @@ header nav a:last-child {margin: 0;}
 .app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info .link a:last-child {margin:0}
 /* 5. sns */
 .sns_wrap {}
-.sns_wrap .sns {max-width: 1920px;}
+.sns_wrap .sns {}
 .sns_wrap .sns .title {}
 .sns_wrap .sns .swiper {}
 .sns_wrap .sns .swiper .swiper-wrapper {transition-timing-function: linear;}
@@ -207,7 +210,7 @@ header nav a:last-child {margin: 0;}
 .sns_wrap .sns .swiper .swiper-wrapper .swiper-slide img {width: 100%;}
 /* 6.illust */
 .illust_wrap {}
-.illust_wrap .illust {max-width: 1920px;}
+.illust_wrap .illust {}
 .illust_wrap .illust .title {}
 .illust_wrap .illust .swiper {}
 .illust_wrap .illust .swiper .swiper-wrapper {transition-timing-function: linear;}

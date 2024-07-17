@@ -10,7 +10,7 @@ $('#wrap').fullpage({
 
 //web swiper
 const web = new Swiper('.web .swiper', {
-    autoplay:{delay:2000},
+    autoplay:{delay:3000},
     loop:true,
     navigation:{
         nextEl:'.web .swiper-button-next',

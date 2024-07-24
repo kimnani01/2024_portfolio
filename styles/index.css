@@ -1,5 +1,5 @@
 /* header */
-body {min-width: 1650px;}
+body {min-width: 1920px;}
 header {
     position: fixed; left: 0; top: 0; z-index: 998;
     width: 100%;

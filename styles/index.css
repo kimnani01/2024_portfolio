@@ -136,13 +136,14 @@ header nav a:last-child {margin: 0;}
 .web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info p {
     font-weight: 500; margin: 15px 0 25px;
 }
-.web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info dl {}
-.web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info dl dd {
+.web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info ul {}
+.web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info ul li {
     margin-bottom: 15px;
 }
-.web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info dl dt {
-    font-weight: 600; margin-bottom: 5px;
-}
+.web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info ul li:nth-child(3),
+.web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info ul li:nth-child(5),
+.web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info ul li:nth-child(7) {margin-bottom: 5px;}
+.web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info ul li span {font-weight: 600;}
 .web_wrap .web .swiper .swiper-wrapper .swiper-slide .web_info .link {
     margin-top: 25px; width: 320px;
     display: flex; flex-flow: row wrap; gap: 10px;
@@ -180,16 +181,17 @@ header nav a:last-child {margin: 0;}
 .app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info p {
     font-weight: 500; margin: 15px 0 25px;
 }
-.app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info dl {}
-.app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info dl dd {
+.app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info ul {}
+.app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info ul li {
     margin-bottom: 15px;
 }
-.app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info dl dd:nth-of-type(5){
+.app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info ul li:nth-child(7) {
     line-height: 1.5;  width: 360px;
 }
-.app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info dl dt {
-    font-weight: 600; margin-bottom: 5px;
-}
+.app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info ul li:nth-child(4),
+.app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info ul li:nth-child(6),
+.app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info ul li:nth-child(8) {margin-bottom: 5px;}
+.app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info ul li span {font-weight: 600;}
 .app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info .link {
     margin-top: 25px; 
     display: flex; 

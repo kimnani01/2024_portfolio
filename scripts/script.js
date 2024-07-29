@@ -18,6 +18,16 @@ const web = new Swiper('.web .swiper', {
     }
 })
 
+//app swiper
+const app = new Swiper('.app .swiper', {
+    autoplay:{delay:3000},
+    loop:true,
+    navigation:{
+        nextEl:'.app .swiper-button-next',
+        prevEl:'.app .swiper-button-prev',
+    }
+})
+
 // sns swiper
 const sns = new Swiper('.sns .swiper', {
     slidesPerView:2,//한번에 보일 슬라이드 수(모바일)

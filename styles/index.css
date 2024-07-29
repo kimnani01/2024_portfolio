@@ -205,6 +205,12 @@ header nav a:last-child {margin: 0;}
 }
 .app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info .link a:hover {background-color: #35659c;}
 .app_wrap .app .swiper .swiper-wrapper .swiper-slide .app_info .link a:last-child {margin:0}
+.app_wrap .app div[class^=swiper-button] {
+    color: #FFD662;
+    position: absolute; top: 60%;
+}
+.app_wrap .app .swiper-button-prev {left: 150px;}
+.app_wrap .app .swiper-button-next {right: 150px;}
 /* 5. sns */
 .sns_wrap {}
 .sns_wrap .sns {}

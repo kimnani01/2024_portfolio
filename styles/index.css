@@ -109,7 +109,8 @@ header nav a:last-child {margin: 0;}
 .profile .txt .awards_license .info dd {}
 .profile .txt .awards_license .info dd:last-child,
 .profile .txt .experience .info dd:last-child {margin: 0;}
-.profile .txt .awards_license .info dd:nth-of-type(3){margin-left: 63px;}
+.profile .txt .awards_license .info dd:nth-of-type(2),
+.profile .txt .awards_license .info dd:nth-of-type(4) {margin-left: 63px;}
 .profile .txt .experience {grid-area: experience;}
 .profile .txt .experience h2 {}
 .profile .txt .experience .info {width: 666px;}
